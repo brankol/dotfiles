@@ -1,0 +1,44 @@
+execute pathogen#infect()
+
+colorscheme codedark
+
+set relativenumber
+set number
+set showcmd
+
+set path+=**
+set wildignore+=*.swp,*.bak
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=*.pdf,*.psd
+set wildignore+=**/node_modules/**
+set wildignore+=**/vendor/**
+set wildignore+=**/bower_components/**
+set wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
+set wildignorecase
+" set wildmode=list:full
+
+set ignorecase
+set smartcase
+
+" Tweaks for browsing
+let g:netrw_banner=0        " disable annoying banner
+let g:netrw_browse_split=4  " open in prior window
+let g:netrw_altv=1          " open splits to the right
+let g:netrw_liststyle=3     " tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+" - :edit a folder to open a file browser
+" - <CR>/v/t to open in an h-split/v-split/tab
+" - check |netrw-browse-maps| for more mappings
+
+" Buffers
+nnoremap gb :ls<CR>:b<Space>
+
+" Plugins
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+
