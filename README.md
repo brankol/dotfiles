@@ -19,3 +19,8 @@ git submodule update --init
 
 Taken from [vimcasts](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/).
 
+## fzf
+
+After `stow fzf`, run `~/.fzf/install`.
+Also be sure to install [ripgrep](https://github.com/BurntSushi/ripgrep#installation) as fzf is configured to use rg behind the scenes.
+

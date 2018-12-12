@@ -40,3 +40,12 @@
 [submodule "vim/.vim/bundle/twig"]
 	path = vim/.vim/bundle/twig
 	url = https://github.com/lumiliet/vim-twig
+[submodule "vim/.vim/bundle/fzf"]
+	path = vim/.vim/bundle/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "fzf/.fzf"]
+	path = fzf/.fzf
+	url = https://github.com/junegunn/fzf.git
+[submodule "vim/.vim/bundle/textobj-uri"]
+	path = vim/.vim/bundle/textobj-uri
+	url = https://github.com/jceb/vim-textobj-uri.git
