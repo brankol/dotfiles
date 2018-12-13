@@ -10,6 +10,9 @@ let mapleader = ","
 noremap <Leader>s :update<CR>
 noremap <Leader>q :quit<CR>
 
+" make yanks available in os clipboard
+set clipboard=unnamed
+
 " Statusline
 set laststatus=2
 
