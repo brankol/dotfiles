@@ -6,6 +6,10 @@ set relativenumber
 set number
 set showcmd
 
+let mapleader = ","
+noremap <Leader>s :update<CR>
+noremap <Leader>q :quit<CR>
+
 " Statusline
 set laststatus=2
 
