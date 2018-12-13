@@ -49,3 +49,6 @@
 [submodule "vim/.vim/bundle/textobj-uri"]
 	path = vim/.vim/bundle/textobj-uri
 	url = https://github.com/jceb/vim-textobj-uri.git
+[submodule "vim/.vim/bundle/rhubarb"]
+	path = vim/.vim/bundle/rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
