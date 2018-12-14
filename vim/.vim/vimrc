@@ -82,5 +82,19 @@ let g:user_emmet_settings = {
     \  },
   \}
 
+function! s:changebranch(branch)
+    execute 'Git checkout' . a:branch
+    call feedkeys("i")
+endfunction
+
+command! -bang Gbranch call fzf#run({
+            \ 'source': 'git branch -a --no-color | grep -v "^\* " ',
+            \ 'sink': function('s:changebranch')
+            \ })
+
 set rtp+=~/.fzf
 nnoremap <C-p> :Files<Cr>
+
+" nicer diff algorithm
+:set diffopt+=algorithm:patience
+
