@@ -58,7 +58,12 @@
 [submodule "vim/.vim/bundle/php"]
 	path = vim/.vim/bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
-
 [submodule "vim/.vim/bundle/gitgutter"]
 	path = vim/.vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/.vim/bundle/airline"]
+	path = vim/.vim/bundle/airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/.vim/bundle/airline-themes"]
+	path = vim/.vim/bundle/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
