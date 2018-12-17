@@ -59,3 +59,6 @@
 	path = vim/.vim/bundle/php
 	url = https://github.com/StanAngeloff/php.vim.git
 
+[submodule "vim/.vim/bundle/gitgutter"]
+	path = vim/.vim/bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git

@@ -6,6 +6,7 @@ set relativenumber
 set number
 set showcmd
 set mouse=a
+set updatetime=100
 
 let mapleader = ","
 noremap <Leader>s :update<CR>
