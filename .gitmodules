@@ -55,3 +55,7 @@
 [submodule "vim/.vim/bundle/fugitive-gitlab"]
 	path = vim/.vim/bundle/fugitive-gitlab
 	url = https://github.com/shumphrey/fugitive-gitlab.vim.git
+[submodule "vim/.vim/bundle/php"]
+	path = vim/.vim/bundle/php
+	url = https://github.com/StanAngeloff/php.vim.git
+
