@@ -13,7 +13,8 @@ set showcmd
 set mouse=a
 set updatetime=100
 
-let mapleader = ","
+let mapleader      = ' '
+let maplocalleader = ' '
 noremap <Leader>s :update<CR>
 noremap <Leader>q :quit<CR>
 
