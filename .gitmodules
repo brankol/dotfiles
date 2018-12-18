@@ -67,3 +67,21 @@
 [submodule "vim/.vim/bundle/airline-themes"]
 	path = vim/.vim/bundle/airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "vim/.vim/bundle/colorizer"]
+	path = vim/.vim/bundle/colorizer
+	url = https://github.com/chrisbra/Colorizer.git
+[submodule "vim/.vim/bundle/editorconfig"]
+	path = vim/.vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim/.vim/bundle/ale"]
+	path = vim/.vim/bundle/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "vim/.vim/bundle/vinegar"]
+	path = vim/.vim/bundle/vinegar
+	url = https://github.com/tpope/vim-vinegar.git
+[submodule "vim/.vim/bundle/eunuch"]
+	path = vim/.vim/bundle/eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+[submodule "vim/.vim/bundle/ultisnips"]
+	path = vim/.vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git

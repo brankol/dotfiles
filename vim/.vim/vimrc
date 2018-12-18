@@ -1,14 +1,17 @@
 execute pathogen#infect()
 
 colorscheme monokai
+" set termguicolors
 let g:airline_theme='molokai'
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
+let g:airline#extensions#ale#enabled=1
 
 set relativenumber
 set number
 set showcmd
 set mouse=a
+set updatetime=100
 
 let mapleader = ","
 noremap <Leader>s :update<CR>
@@ -114,3 +117,20 @@ command! -bang -nargs=? -complete=dir Files
 " nicer diff algorithm
 :set diffopt+=algorithm:patience
 
+" editorconfig
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" ale
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+" let g:ale_sign_error = '✖'
+" let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_enter = 0
+let g:ale_sign_column_always = 1
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsEditSplit="vertical"
