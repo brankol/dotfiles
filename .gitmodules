@@ -85,3 +85,6 @@
 [submodule "vim/.vim/bundle/ultisnips"]
 	path = vim/.vim/bundle/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/.vim/bundle/pasta"]
+	path = vim/.vim/bundle/pasta
+	url = git://github.com/sickill/vim-pasta.git
