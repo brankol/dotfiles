@@ -1,5 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -31,9 +32,9 @@ Plug 'StanAngeloff/php.vim'
 Plug 'lumiliet/vim-twig'
 call plug#end()
 
-colorscheme monokai
+colorscheme gruvbox
+set background=dark
 " set termguicolors
-let g:airline_theme='molokai'
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts=1
 let g:airline#extensions#ale#enabled=1
