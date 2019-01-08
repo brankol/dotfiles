@@ -114,6 +114,7 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " CDC = Change to Directory of Current file
 command CDC cd %:p:h
+" :Gcd to switch to the root directory of the git repository
 
 " Buffers
 nnoremap gb :Buffers<CR>
