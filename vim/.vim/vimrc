@@ -44,6 +44,7 @@ set number
 set showcmd
 set mouse=a
 set updatetime=100
+set omnifunc=syntaxcomplete#Complete
 
 let mapleader      = ' '
 let maplocalleader = ' '
@@ -110,6 +111,9 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " - :edit a folder to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
+
+" CDC = Change to Directory of Current file
+command CDC cd %:p:h
 
 " Buffers
 nnoremap gb :Buffers<CR>
