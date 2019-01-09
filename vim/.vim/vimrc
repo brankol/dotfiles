@@ -99,6 +99,9 @@ set smartcase
 " let g:netrw_list_hide=netrw_gitignore#Hide()
 " let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" Set dir to current path (use :Gcd to set to git root)
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
 " Buffers
 nnoremap gb :Buffers<CR>
 
