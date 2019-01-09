@@ -1,8 +1,6 @@
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -34,10 +32,6 @@ call plug#end()
 
 colorscheme gruvbox
 set background=dark
-" set termguicolors
-let g:airline#extensions#tabline#enabled=1
-let g:airline_powerline_fonts=1
-let g:airline#extensions#ale#enabled=1
 
 set relativenumber
 set number
@@ -102,19 +96,8 @@ set ignorecase
 set smartcase
 
 " Tweaks for browsing
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-" - :edit a folder to open a file browser
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mappings
-
-" CDC = Change to Directory of Current file
-command CDC cd %:p:h
-" :Gcd to switch to the root directory of the git repository
+" let g:netrw_list_hide=netrw_gitignore#Hide()
+" let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " Buffers
 nnoremap gb :Buffers<CR>
