@@ -39,6 +39,8 @@ set showcmd
 set mouse=a
 set updatetime=100
 set omnifunc=syntaxcomplete#Complete
+" make vim work with decimal numbers
+set nrformats=
 
 let mapleader      = ' '
 let maplocalleader = ' '
