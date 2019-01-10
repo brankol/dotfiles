@@ -106,6 +106,9 @@ set smartcase
 " Set dir to current path (use :Gcd to set to git root)
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
 
+" expand current buffer path
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 " Buffers
 nnoremap gb :Buffers<CR>
 
