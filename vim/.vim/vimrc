@@ -100,6 +100,14 @@ set noswapfile
 set ignorecase
 set smartcase
 
+" Autoclosing pairs
+inoremap () ()<left>
+inoremap [] []<left>
+inoremap {} {}<left>
+inoremap '' ''<left>
+inoremap "" ""<left>
+inoremap `` ``<left>
+
 " Tweaks for browsing
 " let g:netrw_list_hide=netrw_gitignore#Hide()
 " let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
@@ -154,8 +162,10 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " ale
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
+\   'javascript': ['prettier_standard'],
 \}
+let g:ale_linters = {'javascript': ['standard']}
+let g:ale_fix_on_save = 1
 " let g:ale_sign_error = '✖'
 " let g:ale_sign_warning = '⚠'
 let g:ale_lint_on_enter = 0
